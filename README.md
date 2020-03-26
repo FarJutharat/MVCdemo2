@@ -1,5 +1,5 @@
 # MVCdemo2
-1. git clone <link https>
+1. git clone https://github.com/FarJutharat/MVCdemo2.git
 2. npm install
 3. run server --> node server.js
-  thank for enjoy my code!!
+4. thank for enjoy my code!!
