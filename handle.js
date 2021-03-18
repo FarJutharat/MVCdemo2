@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 var sql = require("mssql");
+// ตั้งค่าส่วนของ database ที่จะใช้เก็บข้อมูล
 var config = {
     user: 'sa',
     password: 'P@d0rU123',
@@ -14,9 +15,11 @@ if (err) console.log(err);
 app.use(bodyParser.json());
 
 class Student {
-    async checkStudent(req){
+    async checkStudent(req){  //fn
       //  let functionName = '[checkStudent]'
-  return new Promise(async function (resolve, reject) {
+      //resolve = success!
+      //reject = fail!
+  return new Promise(async function (resolve, reject) { //promise เป็นการประกาศว่าจะมีค่าออกมาแน่นอนไม่มีค่าที่เป็นค่าว่าง -> ค่าที่ออกมาก็พวก resolve หรือ reject
      try {
         var request = new sql.Request();
         var message = ""
